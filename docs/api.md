@@ -9,3 +9,4 @@
 | GET | `/api/admin/work-orders` | 评估任务清单 |
 | GET | `/api/shopfloor/dashboard` | 工程师任务工作台 |
 | POST | `/api/shopfloor/work-orders/{id}/reports` | 提交评估结果 |
+| POST | `/api/admin/control-effectiveness` | 控制设计与运行有效性评估 |

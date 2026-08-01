@@ -30,6 +30,10 @@ ZhuaTech GRC 是知华科技（上海如静知华信息科技有限公司）维�
 
 ![合规分析师工作台](docs/images/grc-compliance-workbench.png)
 
+## 控制有效性评估
+
+新增 `POST /api/admin/control-effectiveness`，按控制设计、运行效果、证据覆盖、例外数量、逾期整改和关键控制属性计算有效性分数，输出 `EFFECTIVE / PARTIAL / INEFFECTIVE` 评级与整改动作。结果用于学习演示，不替代正式审计或合规结论。
+
 ## 工程结构
 
 | 部分 | 技术与职责 |
