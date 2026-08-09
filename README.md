@@ -80,3 +80,7 @@ docker compose up --build
 | ![知华科技微信咨询二维码 1](docs/images/zhuatech-wechat-consulting.png) | ![知华科技微信咨询二维码 2](docs/images/zhuatech-wechat-consulting-2.png) |
 
 搜索关键词：GRC 源码、风险合规系统、内控管理、审计整改、Java GRC、Vue GRC、知华科技、上海如静知华信息科技有限公司。
+
+## 剩余风险决策
+
+新增 `POST /api/grc/insights/residual-risk-decision`，按固有风险、控制有效性、财务敞口、监管影响、未关闭发现和证据时效计算剩余风险，输出 `ACCEPT / MITIGATE / ESCALATE`，并形成风险接受或委员会升级动作。
