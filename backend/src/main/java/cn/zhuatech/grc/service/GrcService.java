@@ -1,4 +1,4 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.grc.service;
 import cn.zhuatech.grc.common.BusinessException; import cn.zhuatech.grc.dto.GrcDto.*; import cn.zhuatech.grc.model.*; import cn.zhuatech.grc.repository.*; import org.springframework.stereotype.Service; import org.springframework.transaction.annotation.Transactional; import java.util.*;
 @Service @Transactional(readOnly=true) public class GrcService {
