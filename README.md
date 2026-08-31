@@ -84,3 +84,7 @@ docker compose up --build
 ## 剩余风险决策
 
 新增 `POST /api/grc/insights/residual-risk-decision`，按固有风险、控制有效性、财务敞口、监管影响、未关闭发现和证据时效计算剩余风险，输出 `ACCEPT / MITIGATE / ESCALATE`，并形成风险接受或委员会升级动作。
+
+## 企业级控制证据有效性门禁
+
+新增 `POST /api/enterprise/grc/control-evidence-gate`，检查证据充分性与时效、职责分离、例外审批、整改逾期及抽样覆盖，返回 `EFFECTIVE / REVIEW / INEFFECTIVE`。详见 [控制证据说明](docs/ENTERPRISE_CONTROL_EVIDENCE.md)。
