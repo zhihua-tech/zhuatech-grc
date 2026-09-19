@@ -12,8 +12,14 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class ResidualRiskDecisionService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result evaluate(Request request) {
         int residualScore = (int) Math.round(request.inherentRiskScore()
             * (1 - request.controlEffectiveness()));
@@ -35,6 +41,9 @@ public class ResidualRiskDecisionService {
             request.financialExposure(), actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String riskCode,
                           @Min(0) @Max(100) int inherentRiskScore,
                           @DecimalMin("0") @DecimalMax("1") double controlEffectiveness,
@@ -42,6 +51,9 @@ public class ResidualRiskDecisionService {
                           boolean regulatoryImpact, @Min(0) int openFindings,
                           @Min(0) int evidenceAgeDays) {}
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(String riskCode, int residualRiskScore, String decision,
                          BigDecimal financialExposure, List<String> actions) {}
 }

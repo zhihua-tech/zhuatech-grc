@@ -8,8 +8,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class ControlEvidenceGateService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Assessment assess(Request request) {
         List<String> blockers = new ArrayList<>();
         List<String> actions = new ArrayList<>();
@@ -31,6 +37,9 @@ public class ControlEvidenceGateService {
         return new Assessment(Decision.EFFECTIVE, blockers, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String controlId, @NotBlank String ownerId,
                           @NotBlank String assessmentPeriod, @Min(0) int evidenceCount,
                           @Min(1) int minimumEvidenceCount, @Min(0) int evidenceFreshnessDays,
@@ -38,6 +47,12 @@ public class ControlEvidenceGateService {
                           boolean exceptionOpen, boolean exceptionApproved,
                           boolean remediationOverdue,
                           @Min(0) @Max(100) int sampleCoveragePercent) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Assessment(Decision decision, List<String> blockers, List<String> actions) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public enum Decision { EFFECTIVE, REVIEW, INEFFECTIVE }
 }

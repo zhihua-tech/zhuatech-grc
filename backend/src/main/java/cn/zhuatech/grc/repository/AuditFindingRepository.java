@@ -1,3 +1,12 @@
 /* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.grc.repository; import cn.zhuatech.grc.model.AuditFinding; import org.springframework.data.jpa.repository.JpaRepository; import java.util.List;
-public interface AuditFindingRepository extends JpaRepository<AuditFinding,Long>{List<AuditFinding> findTop10ByOrderByIdDesc();long countByResult(AuditFinding.Result result);}
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
+public interface AuditFindingRepository extends JpaRepository<AuditFinding,Long>{/**
+                                                                                  * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+                                                                                  */
+List<AuditFinding> findTop10ByOrderByIdDesc();/**
+                                                                                                                                * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+                                                                                                                                */
+long countByResult(AuditFinding.Result result);}

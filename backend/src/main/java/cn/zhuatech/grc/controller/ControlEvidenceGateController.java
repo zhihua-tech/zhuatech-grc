@@ -6,12 +6,21 @@ import cn.zhuatech.grc.service.ControlEvidenceGateService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @RestController
 @RequestMapping("/api/enterprise/grc")
 public class ControlEvidenceGateController {
     private final ControlEvidenceGateService service;
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public ControlEvidenceGateController(ControlEvidenceGateService service) { this.service = service; }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @PostMapping("/control-evidence-gate")
     public ApiResponse<ControlEvidenceGateService.Assessment> assess(
         @Valid @RequestBody ControlEvidenceGateService.Request request) {

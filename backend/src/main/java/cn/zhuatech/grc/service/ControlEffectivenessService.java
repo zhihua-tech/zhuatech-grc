@@ -8,8 +8,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class ControlEffectivenessService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public EffectivenessResult evaluate(EffectivenessRequest request) {
         int score = (int) Math.round(request.designScore() * 0.30
             + request.operatingScore() * 0.40 + request.evidenceCoverage() * 0.30)
@@ -27,11 +33,17 @@ public class ControlEffectivenessService {
         return new EffectivenessResult(score, rating, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record EffectivenessRequest(@NotNull @Min(0) @Max(100) Integer designScore,
         @NotNull @Min(0) @Max(100) Integer operatingScore,
         @NotNull @Min(0) @Max(100) Integer evidenceCoverage,
         @NotNull @Min(0) @Max(1000) Integer exceptions,
         @NotNull @Min(0) @Max(1000) Integer overdueActions,
         @NotNull Boolean keyControl) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record EffectivenessResult(int score, String rating, List<String> actions) {}
 }
