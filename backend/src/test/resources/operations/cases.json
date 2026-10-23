@@ -1,0 +1,63 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "inherentScore": "#20",
+      "residualScore": "#8"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "effectiveness": "59"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "residualScore": "#8.2"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "criticalOpen": "1"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "effectiveness": "100"
+    },
+    "expected": {
+      "residualScore": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "likelihood": "0"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "impact": "6"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "effectiveness": "0"
+    },
+    "expected": {
+      "residualScore": "#20",
+      "decision": "HOLD"
+    },
+    "error": false
+  }
+]
